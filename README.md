@@ -1,8 +1,18 @@
-# React + Vite
+# Football Eye Q Frontend
+A frontend for the website used to pick out and save certain exercises.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup
+You will need to have Node Version Manager (nvm). The version of node this project uses is stored in `.nvmrc`, and you can run `nvm use` to install it.
 
-Currently, two official plugins are available:
+Swap to the `dev` branch: `git checkout dev`. If you want to push something into `main`, make a PR in Bitbucket and let someone else check it first, I'd like to keep `main` as always working. If you're working on something big, might be good to branch off `dev` as well, and make a PR to merge back in, just to keep things tidy.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Once you're in the correct branch, make sure you run `npm install`.
+
+Finally, to run the project, run `npm run dev`.
+
+## TODO
+- Login page
+- Full list of exercises page
+- Integrate with backend
+- Manage selection of exercises
+- Make it look nice :)
