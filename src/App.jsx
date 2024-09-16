@@ -1,49 +1,124 @@
-import './App.css'
+import {
+    Container,
+    Divider,
+    Dropdown,
+    Grid,
+    Header,
+    Image,
+    List,
+    Menu,
+    Segment,
+  } from 'semantic-ui-react'
 
 function App() {
 
-  return (
-    <>
-        <div className="body">
-            <div className="container">
-                <div className="exercise">
-                    <input type="checkbox" id="exercise1"></input>
-                    <label htmlFor="exercise1">Exercise 1</label>
-                    <p>In dribbling drills, players weave through cones while maintaining close control of the ball. The focus is on using both feet, keeping touches quick, and improving agility. This exercise helps players maneuver in tight spaces and control the ball under pressure, simulating in-game scenarios where defenders are nearby.</p>
-                </div>
+    return (
+        <>
+          <div>
+    <Menu fixed='top' inverted>
+      <Container>
+        <Menu.Item as='a' header>
+          <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+          Project Name
+        </Menu.Item>
+        <Menu.Item as='a'>Home</Menu.Item>
 
-                <div className="exercise">
-                    <input type="checkbox" id="exercise2"></input>
-                    <label htmlFor="exercise2">Exercise 2</label>
-                    <p>Players pass the ball quickly between teammates set up in a circle or grid. This drill improves passing accuracy, timing, and communication. Variations like one-touch passing or adding defenders make it more challenging. It enhances a player’s spatial awareness and decision-making in real-game situations.</p>
-                </div>
+        <Dropdown item simple text='Dropdown'>
+          <Dropdown.Menu>
+            <Dropdown.Item>List Item</Dropdown.Item>
+            <Dropdown.Item>List Item</Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Header>Header Item</Dropdown.Header>
+            <Dropdown.Item>
+              <i className='dropdown icon' />
+              <span className='text'>Submenu</span>
+              <Dropdown.Menu>
+                <Dropdown.Item>List Item</Dropdown.Item>
+                <Dropdown.Item>List Item</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown.Item>
+            <Dropdown.Item>List Item</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </Container>
+    </Menu>
 
-                <div className="exercise">
-                    <input type="checkbox" id="exercise3"></input>
-                    <label htmlFor="exercise3">Exercise 3</label>
-                    <p>Players take shots from different angles and distances, working on technique, accuracy, and power. The focus is on body positioning and follow-through. Adding defenders or moving targets can simulate game conditions, helping players develop versatility and confidence in front of goal.</p>
-                </div>
+    <Container text style={{ marginTop: '7em' }}>
+      <Header as='h1'>Semantic UI React Fixed Template</Header>
+      <p>This is a basic fixed menu template using fixed size containers.</p>
+      <p>
+        A text container is used for the main container, which is useful for single column layouts.
+      </p>
 
-                <div className="exercise">
-                    <input type="checkbox" id="exercise4"></input>
-                    <label htmlFor="exercise4">Exercise 4</label>
-                    <p>Players are divided into small teams (e.g., 3v3 or 4v4) and play on a smaller field with mini-goals or normal goals. This drill emphasizes quick decision-making, teamwork, and ball control under pressure. The smaller space and fewer players ensure more touches on the ball, promoting improved dribbling, passing, and movement off the ball. Variations can include touch restrictions (e.g., two-touch play) or limited time to score, simulating high-pressure, real-game situations.</p>
-                </div>
+      <Image src='/images/wireframe/media-paragraph.png' style={{ marginTop: '2em' }} />
+      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+    </Container>
 
-                <div className="exercise">
-                    <input type="checkbox" id="exercise5"></input>
-                    <label htmlFor="exercise5">Exercise 5</label>
-                    <p>One player acts as the attacker, trying to dribble past the defender and score on a small goal or target. The defender must maintain their stance, anticipate movements, and tackle cleanly. This drill enhances both defensive and attacking skills, with attackers focusing on creativity and control, while defenders work on positioning, timing, and reading the game.</p>
-                </div>
+    <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
+      <Container textAlign='center'>
+        <Grid divided inverted stackable>
+          <Grid.Column width={3}>
+            <Header inverted as='h4' content='Group 1' />
+            <List link inverted>
+              <List.Item as='a'>Link One</List.Item>
+              <List.Item as='a'>Link Two</List.Item>
+              <List.Item as='a'>Link Three</List.Item>
+              <List.Item as='a'>Link Four</List.Item>
+            </List>
+          </Grid.Column>
+          <Grid.Column width={3}>
+            <Header inverted as='h4' content='Group 2' />
+            <List link inverted>
+              <List.Item as='a'>Link One</List.Item>
+              <List.Item as='a'>Link Two</List.Item>
+              <List.Item as='a'>Link Three</List.Item>
+              <List.Item as='a'>Link Four</List.Item>
+            </List>
+          </Grid.Column>
+          <Grid.Column width={3}>
+            <Header inverted as='h4' content='Group 3' />
+            <List link inverted>
+              <List.Item as='a'>Link One</List.Item>
+              <List.Item as='a'>Link Two</List.Item>
+              <List.Item as='a'>Link Three</List.Item>
+              <List.Item as='a'>Link Four</List.Item>
+            </List>
+          </Grid.Column>
+          <Grid.Column width={7}>
+            <Header inverted as='h4' content='Footer Header' />
+            <p>
+              Extra space for a call to action inside the footer that could help re-engage users.
+            </p>
+          </Grid.Column>
+        </Grid>
 
-                <div className="button-container">
-                    <button id="cancelButton">Cancel</button>
-                    <button id="syncButton">Sync</button>
-                </div>
-            </div>
-        </div>
-    </>
-  )
+        <Divider inverted section />
+        <Image centered size='mini' src='/logo.png' />
+        <List horizontal inverted divided link size='small'>
+          <List.Item as='a' href='#'>
+            Site Map
+          </List.Item>
+          <List.Item as='a' href='#'>
+            Contact Us
+          </List.Item>
+          <List.Item as='a' href='#'>
+            Terms and Conditions
+          </List.Item>
+          <List.Item as='a' href='#'>
+            Privacy Policy
+          </List.Item>
+        </List>
+      </Container>
+    </Segment>
+  </div>
+        </>
+    )
+
 }
 
 export default App

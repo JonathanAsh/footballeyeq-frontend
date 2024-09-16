@@ -19,3 +19,4 @@ Finally, to run the project, run `npm run dev`.
     - Make sidebar with Selection, My Selected Exercises, and Logout
     - Make header with Football Eye Q logo
     - Sort out the colours, overlay an image in the background so its not just a solid grey mess back there
+    - Steal the favicon image from football-eyeq.com and use it for our own
