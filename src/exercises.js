@@ -1,4 +1,4 @@
-const items = [ 
+const items = [
     {
         id: 0,
         name: "Exercise 1",
@@ -9,7 +9,6 @@ const items = [
             "Ball Control",
             "Agility"
         ],
-        selected: false,
     },
     {
         id: 1,
@@ -22,7 +21,6 @@ const items = [
             "Accuracy",
             "Communication"
         ],
-        selected: false,
     },
     {
         id: 2,
@@ -35,7 +33,6 @@ const items = [
             "Tackling",
             "Dribbling"
         ],
-        selected: false,
     },
     {
         id: 3,
@@ -49,7 +46,6 @@ const items = [
             "Passing",
             "Ball Control"
         ],
-        selected: false,
     },
     {
         id: 4,
@@ -62,7 +58,6 @@ const items = [
             "Power",
             "Technique",
         ],
-        selected: false,
     },
 ];
 

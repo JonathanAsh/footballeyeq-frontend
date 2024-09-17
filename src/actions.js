@@ -11,6 +11,6 @@ const handleExerciseClicked = async (id) => {
     }
 };
 
-export { 
+export {
     handleExerciseClicked,
 };
