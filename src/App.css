@@ -1,80 +1,24 @@
-/* General styles for the entire page */
-.body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  /* Apply Roboto font */
-  background-color: grey;
-  /* Background color */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-/* Container styling for content */
 .container {
-  text-align: left;
-  padding: 40px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 900px;
-  background-color: white;
-  /* Same color as the background */
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
-/* Styles for each exercise section */
-.exercise {
-  margin-bottom: 60px;
+.selection-icon {
+    float: right;
 }
 
-/* Styles for exercise descriptions */
-.exercise p {
-  margin: 5px 0;
+.body {
+    position: relative;
+    z-index: 1;
 }
 
-/* Styles for checkboxes */
-.exercise input[type="checkbox"] {
-  float: right;
-  /* Move checkbox to the left of the label */
-  margin-left: 5px;
-  /* Space between checkbox and label */
-  background-color: white;
-}
-
-/* Styles for buttons */
-button {
-  padding: 20px 80px;
-  background-color: #B22222;
-  /* Button background color */
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-left: 10px;
-
-}
-
-/* Hover effect for buttons */
-button:hover {
-  background-color: #ff0000;
-}
-
-/* Specific style for the cancel button */
-#cancelButton {
-  background-color: #B22222;
-  /* Cancel button background color */
-  margin-left: 0;
-  margin-right: 400px;
-}
-
-/* Hover effect for the cancel button */
-#cancelButton:hover {
-  background-color: #ff0000;
-}
-
-/* Container for buttons to center them */
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+.background-image {
+    filter: blur(8px);
+    position: fixed !important;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
