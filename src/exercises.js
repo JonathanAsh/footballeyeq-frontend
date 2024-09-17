@@ -8,7 +8,8 @@ const items = [
             "Dribbling",
             "Ball Control",
             "Agility"
-        ]
+        ],
+        selected: false,
     },
     {
         id: 1,
@@ -20,7 +21,8 @@ const items = [
             "Ball Control",
             "Accuracy",
             "Communication"
-        ]
+        ],
+        selected: false,
     },
     {
         id: 2,
@@ -32,7 +34,8 @@ const items = [
             "Defending",
             "Tackling",
             "Dribbling"
-        ]
+        ],
+        selected: false,
     },
     {
         id: 3,
@@ -45,7 +48,8 @@ const items = [
             "Dribbling",
             "Passing",
             "Ball Control"
-        ]
+        ],
+        selected: false,
     },
     {
         id: 4,
@@ -58,6 +62,7 @@ const items = [
             "Power",
             "Technique",
         ],
+        selected: false,
     },
 ];
 

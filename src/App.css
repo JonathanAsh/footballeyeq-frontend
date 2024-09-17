@@ -1,7 +1,25 @@
-.selected {
-    background-color: blueviolet;
+.container {
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
-.unselected {
-    background-color: orange;
+.selection-icon {
+    float: right;
+}
+
+.body {
+    position: relative;
+    z-index: 1;
+}
+
+.background-image {
+    filter: blur(8px);
+    position: fixed !important;
+    z-index: -1;
+    margin-bottom: -55rem;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
