@@ -6,7 +6,7 @@ const handleExerciseClicked = async (id) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ key: 'value' }),
+            body: JSON.stringify({}),
         });
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
