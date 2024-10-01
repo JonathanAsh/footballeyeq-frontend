@@ -17,23 +17,25 @@ import ExerciseCard from './components/ExerciseCard';
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
+    const [items, setItems] = useState([]);
 
-    let items = [
-        { id: 0, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-        { id: 1, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-        { id: 2, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-        { id: 3, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-        { id: 4, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-    ];
+    // let items = [
+    //     { id: 0, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
+    //     { id: 1, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
+    //     { id: 2, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
+    //     { id: 3, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
+    //     { id: 4, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
+    // ];
 
     useEffect(() => {
         async function fetchData() {
-            items = await preLoadExercises();
+            setItems(await preLoadExercises());
+            console.log(items)
         }
         fetchData();
 
         // No longer loading, and forces re-render
-        setTimeout(() => { setIsLoading(false) }, 2000);
+        setTimeout(() => { setIsLoading(false) }, 500);
     }, []);
 
     return (
@@ -64,6 +66,7 @@ function App() {
                                 <div>Loading...</div>
                                 :
                                 items.map((item, index) => {
+                                    console.log(item)
                                     return (
                                         <ExerciseCard key={index} index={index} item={item} />
                                     )
