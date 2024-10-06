@@ -44,7 +44,7 @@ function App() {
                         <Menu.Item as='a'>Logout</Menu.Item>
                     </Container>
                 </Menu>
-                <Container text style={{ backgroundColor: 'white', paddingTop: '8rem', paddingBottom: '4rem' }}>
+                <Container text style={{ backgroundColor: 'white', paddingTop: '8rem', paddingRight: '3rem', paddingBottom: '4rem', paddingLeft: '2rem' }}>
                     <Header as='h1'>Exercise Selection</Header>
                     <p>Select as many or as few exercises as you like.</p>
                     <p>Each one will be saved to your account to appear in-app.</p>

@@ -11,7 +11,6 @@ const preLoadExercises = async () => {
         selected: selectedExercises.some(selected => selected._id === exercise._id)
     }));
 
-    console.log('Finished product', exercisesWithSelected)
     return exercisesWithSelected;
 };
 

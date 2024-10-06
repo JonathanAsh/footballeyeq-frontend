@@ -8,6 +8,7 @@ import {
 } from 'semantic-ui-react';
 import { useState } from 'react';
 import { handleExerciseClicked } from '../actions';
+import './ExerciseCard.css';
 
 export default function ExerciseCard({ index, item }) {
     const [selected, setSelected] = useState(item.selected);
@@ -25,7 +26,7 @@ export default function ExerciseCard({ index, item }) {
                 <CardMeta>
                     <span className='date'>Age Groups {item.ages}</span>
                 </CardMeta>
-                <CardDescription>
+                <CardDescription className='CardDescription'>
                     {item.description}
                 </CardDescription>
             </CardContent>
