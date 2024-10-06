@@ -13,7 +13,7 @@ export default function ExerciseCard({ index, item }) {
     const [selected, setSelected] = useState(false);
 
     return (
-        <Card fluid raised onClick={async () => { setSelected(handleExerciseClicked(item._id)) }} key={index}>
+        <Card fluid raised onClick={async () => { setSelected(await handleExerciseClicked(item._id)) }} key={index}>
             <CardContent>
                 <Icon
                     name={selected ? 'checkmark' : null}
