@@ -10,10 +10,10 @@ import { useState } from 'react';
 import { handleExerciseClicked } from '../actions';
 
 export default function ExerciseCard({ index, item }) {
-    const [selected, setSelected] = useState(false);
+    const [selected, setSelected] = useState(item.selected);
 
     return (
-        <Card fluid raised onClick={async () => { setSelected(await handleExerciseClicked(item._id)) }} key={index}>
+        <Card fluid raised onClick={async () => { setSelected(!await handleExerciseClicked(item._id)) }} key={index}>
             <CardContent>
                 <Icon
                     name={selected ? 'checkmark' : null}
