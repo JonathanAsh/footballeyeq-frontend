@@ -1,6 +1,5 @@
 const handleExerciseClicked = async (id) => {
     try {
-        console.log(id);
         const response = await fetch('http://localhost:3000/user/exercise/' + id, {
             method: 'POST',
             headers: {

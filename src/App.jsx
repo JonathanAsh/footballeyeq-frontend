@@ -11,21 +11,12 @@ import {
     CardGroup,
 } from 'semantic-ui-react';
 import './App.css';
-// import items from './exercises';
 import { preLoadExercises } from './actions';
 import ExerciseCard from './components/ExerciseCard';
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
     const [items, setItems] = useState([]);
-
-    // let items = [
-    //     { id: 0, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-    //     { id: 1, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-    //     { id: 2, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-    //     { id: 3, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-    //     { id: 4, name: 'a', ages: '1-1', description: 'abc', categories: ['a', 'b', 'c'] },
-    // ];
 
     useEffect(() => {
         async function fetchData() {
@@ -134,7 +125,6 @@ function App() {
             </div>
         </>
     )
-
 }
 
 export default App
