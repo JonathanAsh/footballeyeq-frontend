@@ -11,8 +11,9 @@ import { handleExerciseClicked } from '../actions';
 
 export default function ExerciseCard({ index, item }) {
     const [selected, setSelected] = useState(false);
+
     return (
-        <Card fluid raised onClick={async () => { setSelected(await handleExerciseClicked(index)) }} key={index}>
+        <Card fluid raised onClick={async () => { setSelected(await handleExerciseClicked(item._id)) }} key={index}>
             <CardContent>
                 <Icon
                     name={selected ? 'checkmark' : null}
