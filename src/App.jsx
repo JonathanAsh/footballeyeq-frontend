@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {
     Container,
-    Divider,
-    Grid,
     Header,
     Image,
-    List,
     Menu,
-    Segment,
     CardGroup,
 } from 'semantic-ui-react';
 import './App.css';
@@ -57,7 +53,6 @@ function App() {
                                 <div>Loading...</div>
                                 :
                                 items.map((item, index) => {
-                                    console.log(item)
                                     return (
                                         <ExerciseCard key={index} index={index} item={item} />
                                     )
